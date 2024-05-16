@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Card, Form, Button, Col } from 'react-bootstrap';
+import { BASE_API_URL } from './Url';
 
 function AlphaFormComponent({ onDataReceived }) {
   const [symbol, setSymbol] = useState('');
@@ -17,7 +18,8 @@ function AlphaFormComponent({ onDataReceived }) {
 
     try {
       const response = await axios.get(
-        `http://localhost:8080/demo/api/v1/alpha?symbol=${symbol}&benchmark=${benchmark}&from=${startDate}&to=${endDate}`
+        BASE_API_URL +
+          `/alpha?symbol=${symbol}&benchmark=${benchmark}&from=${startDate}&to=${endDate}`
       );
       const data = response.data;
       onDataReceived(data);

@@ -24,7 +24,7 @@ function FormComponent({ onDataReceived, url }) {
     } catch (error) {
       console.error('Error fetching data:', error);
       setError(
-        error.response?.data?.message + ' -> ' + error.response?.data?.field
+        error.response?.data?.message
       );
     } finally {
       setLoading(false);

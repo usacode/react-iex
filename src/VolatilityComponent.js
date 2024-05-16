@@ -7,15 +7,12 @@ import { AppContext } from './AppContext';
 function VolatilityComponent() {
   const { volatilityData, setVolatilityData, error, setError } = useContext(AppContext);
 
-  //const [volatilityData, setVolatilityData] = useState([]);
-  //const [error, setError] = useState(null);
-
   const handleDataReceived = (data) => {
     setVolatilityData(data);
     setError(null);
   };
 
-  const API_VOLATILITY = BASE_API_URL + '/demo/api/v1/volatility?';
+  const API_VOLATILITY = BASE_API_URL + '/volatility?';
 
   return (
     <div className="container mt-2">

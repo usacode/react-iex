@@ -5,8 +5,6 @@ import { BASE_API_URL } from './Url';
 import { AppContext } from './AppContext';
 
 function ReturnComponent() {
-  //const [chartData, setChartData] = useState([]);
-  //const [error, setError] = useState(null);
   const { returnData, setReturnData, error, setError } = useContext(AppContext);
 
 
@@ -15,7 +13,7 @@ function ReturnComponent() {
     setError(null);
   };
 
-  const API_RETURN = BASE_API_URL + '/demo/api/v1/returns?';
+  const API_RETURN = BASE_API_URL + '/returns?';
 
   return (
     <div className="container mt-2">
