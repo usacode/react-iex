@@ -57,8 +57,9 @@ To manage and share state across different components, the application uses Reac
 
 ## Backend Configuration
 
-The application calls the backend API at **_localhost:8080_**. This configuration can be updated in the **_Url.js_** file if the backend port changes.
+The application calls the backend API at **_localhost:8080_**. This configuration can be updated in the **_Url.js_** file if the backend port changed.
 
+Backend on Github:https://github.com/usacode/iex-api/tree/master
 ## How to Run the Application
 
 1. **_Install Dependencies:_**
