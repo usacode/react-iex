@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React,  { useContext }  from 'react';
 import AlphaFormComponent from './AlphaFormComponent';
 import AlphaDisplayComponent from './AlphaDisplayComponent';
+import { AppContext } from './AppContext';
 
 function AlphaComponent() {
-  const [alphaData, setAlphaData] = useState(null);
-  const [error, setError] = useState(null);
+  //const [alphaData, setAlphaData] = useState(null);
+  //const [error, setError] = useState(null);
+  const { alphaData, setAlphaData, error, setError } = useContext(AppContext);
+
 
   const handleDataReceived = (data) => {
     setAlphaData(data);

@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React,  { useContext }  from 'react';
 import FormComponent from './FormComponent';
 import VolatilityChartComponent from './VolatilityChartComponent';
 import { BASE_API_URL } from './Url';
+import { AppContext } from './AppContext';
 
 function VolatilityComponent() {
-  const [volatilityData, setVolatilityData] = useState([]);
-  const [error, setError] = useState(null);
+  const { volatilityData, setVolatilityData, error, setError } = useContext(AppContext);
+
+  //const [volatilityData, setVolatilityData] = useState([]);
+  //const [error, setError] = useState(null);
 
   const handleDataReceived = (data) => {
     setVolatilityData(data);

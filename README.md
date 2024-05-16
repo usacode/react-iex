@@ -36,6 +36,16 @@ This document provides an overview of the React-based application designed to pe
   - Renders the **_FormComponent_** for user inputs.
   - Renders the **_VolatilityChartComponent_** to display the volatility data in a chart format.
 
+### Context Usage for State Management
+
+#### Context Overview
+
+To manage and share state across different components, the application uses React Context. This approach ensures that the states for Alpha, Return, and Volatility data are maintained consistently throughout the application. The context is defined in the **_AppContext.js_** file and includes the following states:
+
+- **_alphaData:_** Stores the data for Alpha analysis.
+- **_returnData:_** Stores the data for Return analysis.
+- **_volatilityData:_** Stores the data for Volatility analysis.
+
 ### Navigation
 
 #### NavBar
@@ -47,7 +57,7 @@ This document provides an overview of the React-based application designed to pe
 
 ## Backend Configuration
 
-The application calls the backend API at localhost:8080. This configuration can be updated in the Url.js file if the backend port changes.
+The application calls the backend API at **_localhost:8080_**. This configuration can be updated in the **_Url.js_** file if the backend port changes.
 
 ## How to Run the Application
 
