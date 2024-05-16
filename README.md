@@ -51,19 +51,19 @@ The application calls the backend API at localhost:8080. This configuration can 
 
 ## How to Run the Application
 
-1. Install Dependencies:
+1. **_Install Dependencies:_**
    Make sure you have Node.js installed. Then, navigate to the project directory and run:
 
 **_npm install_**
 
-2. Update Backend URL:
+2. **_Update Backend URL:_**
    If the backend API's port or address changes, update the **_Url.js_** file with the new backend URL.
-3. Start the Development Server:
+3. **_Start the Development Server:_**
    To start the application, run:
 
 **_npm start_**
 
-4. Access the Application:
+4. **_Access the Application:_**
    Open a web browser and navigate to **_http://localhost:3000_** to access the application.
-5. API Requirements:
+5. **_API Requirements:_**
    Ensure that the backend API is running and accessible at the configured URL to allow the application to fetch data.
