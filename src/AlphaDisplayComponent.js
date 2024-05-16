@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Form, Button, Col } from 'react-bootstrap';
+import { Card,Col } from 'react-bootstrap';
 
 function AlphaDisplayComponent({ data }) {
   return (
