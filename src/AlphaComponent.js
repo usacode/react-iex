@@ -4,8 +4,6 @@ import AlphaDisplayComponent from './AlphaDisplayComponent';
 import { AppContext } from './AppContext';
 
 function AlphaComponent() {
-  //const [alphaData, setAlphaData] = useState(null);
-  //const [error, setError] = useState(null);
   const { alphaData, setAlphaData, error, setError } = useContext(AppContext);
 
 
